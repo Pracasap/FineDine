@@ -1,7 +1,87 @@
 body {
-    
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    text-align: left;
+}
+
+h1 {
+    font-size: 50px;
 }
 
 .navbar {
-    background-color: #1c1c1c;
+    background-color: rgb(88, 114, 32);
 }
+
+.greetings {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.text-box {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Buttons */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: rgb(88, 114, 32);
+    border: 1px solid rgb(88, 114, 32);
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid rgba(180,119,42);
+    color: white;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: rgb(180,119,42);
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid rgb(180,119,42);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid rgb(88, 114, 32);
+    color: #fff;
+}
+/* Buttons End */
