@@ -1,11 +1,9 @@
 body {
     background-color: #fff;
-    color: rgb(255, 255, 255);
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    text-align: left;
     font-size: 16px;
     scroll-behavior: smooth;
 }
@@ -16,7 +14,6 @@ h1 {
 h2 {
     font-size: 2.5rem;
 }
-
 
 /* Navbar */
 .navbar {
@@ -76,7 +73,7 @@ input[type=submit]:active {
 }
 /* Buttons End */
 
-/* Greetings section */
+/* Greetings */
 .greetings {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
@@ -99,14 +96,29 @@ input[type=submit]:active {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-/* End of Greetings section */
+/* End of Greetings */
 
 
-/* How It Works section */
+/* How It Works */
 .infoIcon {
     color: rgb(238, 142, 25);
     font-size: 5em;
 }
-/* End of How It Works section */
+/* End of How It Works */
 
+/* On The Menu */
+.menu {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.803), rgba(0, 0, 0, 0.7)), url(/img/menuSectionBg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/menuSectionBg.jpg);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
 
+.menuInnerBox {
+    margin: 50px 0;
+    background-color: white;
+    padding: 40px;
+}
