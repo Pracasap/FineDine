@@ -8,18 +8,23 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>FineDine: Healthly Food delivered to you!</title>
+    <title>FineDine: Healthly Meals Delivered Weekly!</title>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-md sticky-top">
         <div class="container">
-            <a class="navbar-brand mr-5" href="#">
+            <a class="navbar-brand mr-5" href="index.html">
                 <ion-icon name="restaurant"></ion-icon> FineDine
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
@@ -31,7 +36,7 @@
                     </li>
                     <li class="nav-items"><a href="#WhyFineDine" class="nav-link">How It Works</a></li>
                     <li class="nav-items"><a href="#OnTheMenu" class="nav-link">On The Menu</a></li>
-                    <li class="nav-items"><a href="#" class="nav-link">Our Plans</a>
+                    <li class="nav-items"><a href="#GetStarted" class="nav-link">Get Started</a>
                     </li>
                 </ul>
                 <span class="navbar-text ml-auto">
@@ -46,7 +51,46 @@
         <div class="row greetings">
             <div class="col text-box">
                 <h1 class="text-white font-weight-bold pb-4">Chef cooked, healthy meals delivered to you.</h1>
-                <a class="btn btn-full btn-lg" href="#">Get Started</a>
+                <a class="btn btn-full btn-lg" href="#" data-toggle="modal" data-target="#getStartedModal">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="getStartedModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title pl-3">Healthy Meals Delivered Weekly</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="email" name="email" placeholder="YourEmail@email.com" type="text"
+                                        class="form-control form-control-lg" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="text1" name="text1" placeholder="Zip" type="text"
+                                        class="form-control form-control-lg" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col text-left">
+                                    <a class="btn btn-full" href="#">Get Started</a>
+                                </div>
+                            </div>
+                        </form>
+                        <h6 class="text-left pt-3">Already have an account? <a href="#" class="text-primary">Log in.</a>
+                        </h6>
+                        <h6 class="text-left">By continuing, you agree to our Terms and Policy, & will receive emails
+                            from FineDine.</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -188,7 +232,8 @@
                         <ion-icon name="star" class="rating"></ion-icon>
                         <ion-icon name="star" class="rating"></ion-icon>
                         <h5 class="card-title mt-2">FineDine has changed our lives!</h5>
-                        <p class="card-text">With FineDine, we don't have to go anywehre or wait for delivery, and our monthly bill has been cut nearly in half. We love it.</p>
+                        <p class="card-text">With FineDine, we don't have to go anywehre or wait for delivery, and our
+                            monthly bill has been cut nearly in half. We love it.</p>
                         <h6 class="font-weight-bold">Dave</h6>
                     </div>
                 </div>
@@ -202,7 +247,8 @@
                         <ion-icon name="star" class="rating"></ion-icon>
                         <ion-icon name="star" class="rating"></ion-icon>
                         <h5 class="card-title mt-2">10 stars! Awesome! Love it!</h5>
-                        <p class="card-text">We love FineDine because it takes two minutes to prepare, the food is great and we don't have to spend time cleaning up. Very happy with the service.</p>
+                        <p class="card-text">We love FineDine because it takes two minutes to prepare, the food is great
+                            and we don't have to spend time cleaning up. Very happy with the service.</p>
                         <h6 class="font-weight-bold">Sheri</h6>
                     </div>
                 </div>
@@ -216,7 +262,8 @@
                         <ion-icon name="star" class="rating"></ion-icon>
                         <ion-icon name="star" class="rating"></ion-icon>
                         <h5 class="card-title mt-2">Best decision I've ever made</h5>
-                        <p class="card-text">With FineDine, I don't have to think about what I'm going to eat for lunch each day and feel good knowing that I'm eating a healthy meal. I love the convenience!</p>
+                        <p class="card-text">With FineDine, I don't have to think about what I'm going to eat for lunch
+                            each day and feel good knowing that I'm eating a healthy meal. I love the convenience!</p>
                         <h6 class="font-weight-bold">Cindi</h6>
                     </div>
                 </div>
@@ -224,6 +271,90 @@
         </div>
     </div>
 
+    <!-- Get Started -->
+    <div class="container-fluid getStartedForm" id="GetStarted">
+        <div class="row">
+            <div class="col-md formcontainer">
+                <h2 class="font-weight-bold p-4">Healthy Meals Delivered Weekly</h2>
+                <div class="row text-center pl-4 pr-4 pb-4">
+                    <div class="col">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="email" name="email" placeholder="YourEmail@email.com" type="text"
+                                        class="form-control form-control-lg" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input id="text1" name="text1" placeholder="Zip" type="text"
+                                        class="form-control form-control-lg" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col text-left">
+                                    <a class="btn btn-full" href="#">Get Started</a>
+                                </div>
+                            </div>
+                        </form>
+                        <h6 class="text-left pt-3">Already have an account? <a href="#" class="text-primary">Log in.</a>
+                        </h6>
+                        <h6 class="text-left">By continuing, you agree to our Terms and Policy, & will receive emails
+                            from FineDine.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 font-weight-bold text-center">
+                    <h4>FineDine</h4>
+                    <h6>© FineDine Inc.</h6>
+                </div>
+                <div class="col-md-3 col-lg-3 text-center d-none d-sm-none d-md-block">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 text-center d-none d-sm-none d-md-block">
+                    <h6>Learn More</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#OnTheMenu">On The Menu</a></li>
+                        <li><a href="#WhyFineDine">Why FineDine?</a></li>
+                        <li><a href="#">Gifts</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Students</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 text-center">
+                    <h6>Join Us</h6>
+                    <a href="http://instagram.com/">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="http://instagram.com/">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="http://instagram.com/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="http://instagram.com/">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

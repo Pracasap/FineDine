@@ -28,8 +28,7 @@ h2 {
 
 /* Buttons */
 .btn:link,
-.btn:visited,
-input[type=submit] {
+.btn:visited {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -45,7 +44,6 @@ input[type=submit] {
     background-color: rgb(88, 114, 32);
     border: 1px solid rgb(88, 114, 32);
     color: #fff;
-    margin-right: 10px;
 }
 
 .btn-ghost:link,
@@ -89,7 +87,7 @@ input[type=submit]:active {
 .text-box {
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -115,6 +113,7 @@ input[type=submit]:active {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .menuInnerBox {
@@ -126,4 +125,53 @@ input[type=submit]:active {
 /* What Others Are Saying */
 .rating {
     color: rgb(238, 142, 25);
+}
+
+
+.getStartedForm {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 535px;
+    background-attachment: fixed;
+}
+
+.formcontainer {
+    margin: 50px auto;
+    padding: 16px;
+    background-color: white;
+    max-width: 800px;
+    min-width: 500px;
+}
+
+/* Footer */
+.site-footer {
+    padding: 40px;
+    background-color: rgba(254, 253, 248, 1);
+}
+
+a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+a:hover {
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
 }
