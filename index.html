@@ -10,60 +10,103 @@
 
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>FineDine: Healthly Food delivered to you!</title>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-dark navbar-expand-md sticky-top">
         <div class="container">
-            <a class="navbar-brand mr-5" href="#">FineDine</a>
+            <a class="navbar-brand mr-5" href="#">
+                <ion-icon name="restaurant"></ion-icon> FineDine
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-items active"><a href="#" class="nav-link"><i class="fa fa-home fa-lg"></i> Home</a>
+                    <li class="nav-items active"><a href="#greetings" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-items"><a href="aboutus.html" class="nav-link"><i class="fa fa-info fa-lg"></i>
-                            Why FineDine</a></li>
-                    <li class="nav-items"><a href="#" class="nav-link"><i class="fa fa-list fa-lg"></i> Our Plans</a>
+                    <li class="nav-items"><a href="#WhyFineDine" class="nav-link">How It Works</a></li>
+                    <li class="nav-items"><a href="#" class="nav-link">Our Plans</a>
                     </li>
-                    <li class="nav-items"><a href="contactus.html" class="nav-link"><i
-                                class="fa fa-address-card fa-lg"></i> Menu</a></li>
+                    <li class="nav-items"><a href="contactus.html" class="nav-link">On the Menu</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in"></i> Login
-                    </a>
+                    <a class="btn btn-ghost btn-sm" href="#">Login</a>
                 </span>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <!-- Greetings Section -->
+    <div class="container-fluid" id="greetings">
         <div class="row greetings">
             <div class="col text-box">
-                <h1 class="text-white font-weight-bold">Chef cooked, healthy meals delivered to you.</h1>
-                <a class="btn btn-full" href="#">Get Started</a>
+                <h1 class="text-white font-weight-bold pb-4">Chef cooked, healthy meals delivered to you.</h1>
+                <a class="btn btn-full btn-lg" href="#">Get Started</a>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <!-- How It Works -->
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col text-center pb-4" id="WhyFineDine">
+                <h2 class="text-dark font-weight-bold">How It Works</h2>
+            </div>
+        </div>
         <div class="row">
-            <div class="col text-center mt-4">
-                <h1 class="text-dark">Why FineDine</h1>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body text-center">
+                        <ion-icon name="fast-food-outline" class="infoIcon"></ion-icon><br>
+                        <h5 class="card-title text-dark ">Choose Your Meals</h5>
+                        <p class="card-text text-dark text-center">30+ meau of all-natureal dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <ion-icon name="car-outline" class="infoIcon"></ion-icon><br>
+                        <h5 class="card-title text-dark">We Cook & Deliver</h5>
+                        <p class="card-text text-dark text-center">Cooked by chefs and sent fresh.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <ion-icon name="flame-outline" class="infoIcon"></ion-icon><br>
+                        <h5 class="card-title text-dark ">You Heat 'Em Up</h5>
+                        <p class="card-text text-dark">Ready to eat in 3 minutes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-6 col-lg-3">
+                <div class="card border-0 text-center">
+                    <div class="card-body">
+                        <ion-icon name="restaurant-outline" class="infoIcon"></ion-icon><br>
+                        <h5 class="card-title text-dark ">Eat & Repeat</h5>
+                        <p class="card-text text-dark">Skip a week or cancel at anytime.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
 
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

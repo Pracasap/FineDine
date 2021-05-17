@@ -6,38 +6,28 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     text-align: left;
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
 }
 
+
+/* Navbar */
 .navbar {
     background-color: rgb(88, 114, 32);
 }
 
-.greetings {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
-    background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.nav-items {
+    padding-right: 15px;
 }
+/* End of Navbar */
 
-.text-box {
-    position: absolute;
-    width: 100%;
-    top: 45%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 /* Buttons */
 .btn:link,
@@ -63,7 +53,7 @@ input[type=submit] {
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid rgba(180,119,42);
+    border: 1px solid rgb(255, 255, 255);
     color: white;
 }
 
@@ -85,3 +75,38 @@ input[type=submit]:active {
     color: #fff;
 }
 /* Buttons End */
+
+/* Greetings section */
+.greetings {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.text-box {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* End of Greetings section */
+
+
+/* How It Works section */
+.infoIcon {
+    color: rgb(238, 142, 25);
+    font-size: 5em;
+}
+/* End of How It Works section */
+
+
