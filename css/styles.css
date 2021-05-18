@@ -108,18 +108,16 @@ input[type=submit]:active {
 .menu {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/menuSectionBg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/menuSectionBg.jpg);
+    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 .menuInnerBox {
-    margin: 50px 0;
     background-color: white;
-    padding: 40px;
 }
 
 /* What Others Are Saying */
@@ -131,14 +129,12 @@ input[type=submit]:active {
 .getStartedForm {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+    background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    position: relative;
-    min-height: 535px;
-    background-attachment: fixed;
 }
 
 .formcontainer {
@@ -146,7 +142,6 @@ input[type=submit]:active {
     padding: 16px;
     background-color: white;
     max-width: 800px;
-    min-width: 500px;
 }
 
 /* Footer */
@@ -161,17 +156,26 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    color:rgba(0, 0, 0, 0.7);
+    text-decoration: none;
 }
 
 .modal {
-    position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     bottom: 0;
     left: 0;
     z-index: 10040;
     overflow: auto;
-    overflow-y: auto;
+}
+
+.FAQContainer {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/bgModel.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/bgModel.jpg);
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
 }
