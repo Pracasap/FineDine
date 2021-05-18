@@ -147,7 +147,7 @@ input[type=submit]:active {
 /* Footer */
 .site-footer {
     padding: 40px;
-    background-color: rgba(254, 253, 248, 1);
+    background-color: rgba(243, 254, 233, 0.904);
 }
 
 a {
@@ -169,8 +169,8 @@ a:hover {
 }
 
 .FAQContainer {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/bgModel.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/bgModel.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
     background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -178,4 +178,11 @@ a:hover {
     background-size: cover;
     background-position: center;
     padding: 50px;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
