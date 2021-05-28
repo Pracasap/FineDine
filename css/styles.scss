@@ -1,5 +1,5 @@
 $green : rgb(88, 114, 32);
-$orange : rgb(180,119,42);
+$orange : rgb(212, 122, 12);
 $icon: rgb(238, 142, 25);
 $white: #fff;
 
@@ -50,6 +50,10 @@ form {
     padding: 15px 0;
 }
 
+.form-label {
+    font-size: 1.2rem;
+}
+
 .close {
     color: $white;
     align-self: center;
@@ -80,7 +84,8 @@ form {
 .btn-full:link,
 .btn-full:visited,
 button[type=button],
-button[type=submit] {
+button[type=submit],
+button[type=reset] {
     background-color: $green;
     border: 1px solid $green;
     color: $white;
@@ -103,6 +108,7 @@ button[type=submit]:active {
 .btn-full:hover,
 .btn-full:active {
     border: 1px solid $orange;
+    background-color: $orange;
 }
 
 .btn-ghost:hover,
@@ -197,15 +203,26 @@ button[type=submit]:active {
     background-size: cover;
     background-position: center;
     padding: 50px;
-}
-
-.flex-wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
 }
 
 button.close {
     border: 0px;
+}
+
+.contact {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.contactInnerBox {
+    background-color: $white;
+    padding: 30px;
 }
