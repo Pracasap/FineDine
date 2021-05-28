@@ -92,6 +92,9 @@ button[type=submit]:active {
 .btn-ghost:active {
   border: 1px solid #587220; }
 
+button.close {
+  border: 0px; }
+
 /* Greetings */
 .greetings {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
@@ -137,6 +140,41 @@ button[type=submit]:active {
 .rating {
   color: #ee8e19; }
 
+/* Contact */
+.contact {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
+.contactInnerBox {
+  background-color: #fff;
+  padding: 30px; }
+
+/* FAQs */
+.FAQContainer {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 100vh; }
+
+/* Footer */
+.site-footer {
+  padding: 40px;
+  background-color: rgba(243, 254, 233, 0.904); }
+
+/* Extras */
 .getStartedForm {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
@@ -152,38 +190,3 @@ button[type=submit]:active {
   padding: 16px;
   background-color: #fff;
   max-width: 800px; }
-
-/* Footer */
-.site-footer {
-  padding: 40px;
-  background-color: rgba(243, 254, 233, 0.904); }
-
-.FAQContainer {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/FormBackground.jpg);
-  background-attachment: fixed;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
-  height: 100vh; }
-
-button.close {
-  border: 0px; }
-
-.contact {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
-  background-attachment: fixed;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  height: 100vh; }
-
-.contactInnerBox {
-  background-color: #fff;
-  padding: 30px; }
