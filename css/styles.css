@@ -18,7 +18,8 @@ a {
   color: rgba(0, 0, 0, 0.7); }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .modal {
   top: 20%;
