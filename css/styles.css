@@ -57,7 +57,7 @@ form {
 .btn:visited {
   display: inline-block;
   padding: 10px 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   border-radius: 5px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -86,12 +86,11 @@ button[type=submit]:active {
 
 .btn-full:hover,
 .btn-full:active {
-  border: 1px solid #d47a0c;
-  background-color: #d47a0c; }
+  border: 1px solid #d47a0c; }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-  border: 1px solid #587220; }
+  border: 1px solid #d47a0c; }
 
 button.close {
   border: 0px; }
@@ -143,7 +142,7 @@ button.close {
 
 /* Contact */
 .contact {
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Babnner.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/Banner.jpg);
   background-attachment: fixed;
   -o-background-size: cover;
