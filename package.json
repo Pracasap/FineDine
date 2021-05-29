@@ -36,6 +36,7 @@
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
+    "@beyonk/google-fonts-webpack-plugin": "^1.7.0",
     "bootstrap": "^4.5.2",
     "ionicons": "5.5.1",
     "jquery": "^3.5.1",
