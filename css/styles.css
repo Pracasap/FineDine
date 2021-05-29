@@ -150,7 +150,7 @@ button.close {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .contactInnerBox {
   background-color: #fff;
@@ -167,7 +167,7 @@ button.close {
   background-size: cover;
   background-position: center;
   padding: 50px;
-  height: 100vh; }
+  min-height: 100vh; }
 
 /* Footer */
 .site-footer {
