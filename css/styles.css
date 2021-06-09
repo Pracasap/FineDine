@@ -191,6 +191,7 @@ button.close {
 
 /* Footer */
 .site-footer {
+  border-top: 1px solid rgba(203, 252, 203, 0.619);
   padding: 40px;
   background-color: rgba(243, 254, 233, 0.904); }
 
